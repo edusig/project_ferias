@@ -1,0 +1,38 @@
+
+
+
+<HBox@BoxLayout>
+    orientation: 'horizontal'
+    spacing: '6dp'
+
+
+<VBox@BoxLayout>
+    orientation: 'vertical'
+    spacing: '6dp'
+
+
+<Home>:
+    #canvas:
+    #    Rectangle:
+    #        pos: self.center_x-5, 0
+    #        size: 10, self.height
+    VBox:
+        size_hint: (None, None)
+        size: (200, 300)
+        GridLayout:
+            cols: 2
+            
+            Button:
+                text: 'teste1'
+            Button:
+                text: 'teste2'
+            Button:
+                text: 'teste3'
+            Button:
+                text: 'teste4'
+        Label:
+            #font_size: 70
+            haling: 'right'  
+            #center_x: root.width * 3 / 4
+            #top: root.top - 50
+            text: "teste"
