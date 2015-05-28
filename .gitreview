@@ -1,4 +1,4 @@
-[gerrithub]
+[gerrit]
 host=review.gerrithub.io
 port=29418
 project=edusig/project_ferias
