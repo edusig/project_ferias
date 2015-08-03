@@ -1,4 +1,4 @@
-
+#:import hex_color kivy.utils.get_color_from_hex
 
 
 <HBox@BoxLayout>
@@ -10,29 +10,88 @@
     orientation: 'vertical'
     spacing: '6dp'
 
+<FilterButton@Button>
+    size_hint: (None, None)
+    height: '42dp'
+    width: '207dp'
 
-<Home>:
-    #canvas:
-    #    Rectangle:
-    #        pos: self.center_x-5, 0
-    #        size: 10, self.height
-    VBox:
-        size_hint: (None, None)
-        size: (200, 300)
-        GridLayout:
-            cols: 2
-            
-            Button:
-                text: 'teste1'
-            Button:
-                text: 'teste2'
-            Button:
-                text: 'teste3'
-            Button:
-                text: 'teste4'
-        Label:
-            #font_size: 70
-            haling: 'right'  
-            #center_x: root.width * 3 / 4
-            #top: root.top - 50
-            text: "teste"
+
+<Type_Selector>:
+    app: app
+
+    canvas.before:
+        Color:
+            rgba: hex_color('000000')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    spacing: '6dp'
+    padding: '10dp'
+    orientation: 'vertical'
+    size_hint_x: None
+    width: '213dp'
+
+    FilterButton:
+        background_normal: 'data/pixmaps/all_btn.png'
+        background_down: 'data/pixmaps/all_btn_act.png'
+    FilterButton:
+        background_normal: 'data/pixmaps/presentation_btn.png'
+        background_down: 'data/pixmaps/presentation_btn_act.png'
+    FilterButton:
+        background_normal: 'data/pixmaps/music_btn.png'
+        background_down: 'data/pixmaps/music_btn_act.png'
+    FilterButton:
+        background_normal: 'data/pixmaps/video_btn.png'
+        background_down: 'data/pixmaps/video_btn_act.png'
+    FilterButton:
+        background_normal: 'data/pixmaps/image_btn.png'
+        background_down: 'data/pixmaps/image_btn_act.png'
+
+
+<Source_Screen>:
+    HBox:
+        Type_Selector:
+        VBox:
+            padding: '10dp'
+            spacing: '10dp'
+            HBox:
+                #spacing: '10dp'
+                Button:
+                    text: 'Teste' #root.device_name[0] if root.device_name else 'No device'
+                    #disabled: len(root.device_name) == 0
+                Button:
+                    text: 'Local'
+            HBox:
+                #spacing: '10dp'
+                Button:
+                    text: 'Chrome'
+                    #background_normal: 'data/pixmaps/google_drive.png'
+                Button:
+                    text: 'Dropbox'
+                    #background_normal: 'data/pixmaps/dropbox.png'
+                Button:
+                    text: 'Youtube'
+                    #background_normal: 'data/pixmaps/youtube.png'
+
+
+<Status_Bar>:
+    text: 'OK'
+    font_size: '12sp'
+    size_hint_y: None
+    height: '16dp'
+    halign: 'right'
+    valign: 'middle'
+
+<Main>:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: hex_color('f2f2f2ff')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    ScreenManager:
+        id: screen_manager
+    Status_Bar:
+        id: status_bar
