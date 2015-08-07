@@ -10,10 +10,18 @@
     orientation: 'vertical'
     spacing: '6dp'
 
+
 <FilterButton@Button>
     size_hint: (None, None)
     height: '42dp'
     width: '207dp'
+
+
+<Document_Preview@BoxLayout>
+    Image:
+        size_hint: (None, None)
+        size: (36, 36)
+        source: 'data/pixmaps/icon.png'
 
 
 <Type_Selector>:
@@ -25,54 +33,70 @@
         Rectangle:
             pos: self.pos
             size: self.size
-
-    spacing: '6dp'
-    padding: '10dp'
-    orientation: 'vertical'
-    size_hint_x: None
-    width: '213dp'
-
-    FilterButton:
-        background_normal: 'data/pixmaps/all_btn.png'
-        background_down: 'data/pixmaps/all_btn_act.png'
-    FilterButton:
-        background_normal: 'data/pixmaps/presentation_btn.png'
-        background_down: 'data/pixmaps/presentation_btn_act.png'
-    FilterButton:
-        background_normal: 'data/pixmaps/music_btn.png'
-        background_down: 'data/pixmaps/music_btn_act.png'
-    FilterButton:
-        background_normal: 'data/pixmaps/video_btn.png'
-        background_down: 'data/pixmaps/video_btn_act.png'
-    FilterButton:
-        background_normal: 'data/pixmaps/image_btn.png'
-        background_down: 'data/pixmaps/image_btn_act.png'
-
-
-<Source_Screen>:
     HBox:
-        Type_Selector:
+        valign: 'top'
+        VBox:
+            spacing: '6dp'
+            padding: '10dp'
+            size_hint_x: None
+            halign: 'middle'
+            valign: 'top'
+            width: '220dp'
+
+            # XXX Improve the aligment of preview
+            VBox:
+                size_hint: (None, None)
+                size: ('220dp', '250dp')
+                halign: 'middle'
+                Label:
+                    text: 'Preview'
+                Image:
+                    size_hint: (None, None)
+                    size: ('120dp', '120dp')
+                    source: root.preview_file(file_chooser.selection) or 'No file selected!'
+                Label:
+                    text: 'Image description\n This is a Test\n Thanks'
+            Button:
+                text: 'All'
+                on_release: root.filter_selected('*')
+            Button:
+                text: 'Presentation'
+                on_release: root.filter_selected(['*.pptx', '*.ppt', '*.pdf', '*.odp'])
+            Button:
+                text: 'Music'
+                on_release: root.filter_selected(['*.mp3'])
+            Button:
+                text: 'Video'
+                on_release: root.filter_selected(['*.mp4', '*.avi'])
+            Button:
+                text: 'Image'
+                on_release: root.filter_selected(['*.png', '*jpg', '*.jpeg', '*.bmp'])
+            Button:
+                text: 'Back'
+                on_release: root.go_back()
+        FileChooserIconView:
+            id: file_chooser
+            on_submit: root.load_file(file_chooser.selection)
+
+
+<Source_Screen>
+    HBox:
         VBox:
             padding: '10dp'
             spacing: '10dp'
             HBox:
-                #spacing: '10dp'
                 Button:
-                    text: 'Teste' #root.device_name[0] if root.device_name else 'No device'
-                    #disabled: len(root.device_name) == 0
+                    text: 'Teste'
                 Button:
                     text: 'Local'
+                    on_release: root.source_selected()
             HBox:
-                #spacing: '10dp'
                 Button:
-                    text: 'Chrome'
-                    #background_normal: 'data/pixmaps/google_drive.png'
+                    text: 'Google Drive'
                 Button:
                     text: 'Dropbox'
-                    #background_normal: 'data/pixmaps/dropbox.png'
                 Button:
                     text: 'Youtube'
-                    #background_normal: 'data/pixmaps/youtube.png'
 
 
 <Status_Bar>:
@@ -82,6 +106,7 @@
     height: '16dp'
     halign: 'right'
     valign: 'middle'
+
 
 <Main>:
     orientation: 'vertical'
