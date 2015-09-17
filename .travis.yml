@@ -4,5 +4,7 @@ python:
 install:
   - pip install pep8 --use-mirrors
   - pip install https://github.com/dcramer/pyflakes/tarball/master
+notifications:
+  slack: opuntiateam:TFBnF9P5IaHdmPHpCMy7vST3
 script:
   - pep8 *py
