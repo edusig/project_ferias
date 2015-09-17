@@ -2,9 +2,8 @@ language: python
 python:
   - 2.7
 install:
-  - pip install pep8 --use-mirrors
-  - pip install https://github.com/dcramer/pyflakes/tarball/master
+  - pip install flake8
 notifications:
   slack: opuntiateam:TFBnF9P5IaHdmPHpCMy7vST3
 script:
-    - pep8 *py --max-line-length=95 --ignore=E402
+    - flake8 *py --max-line-length=95
