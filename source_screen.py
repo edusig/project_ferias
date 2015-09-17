@@ -1,5 +1,5 @@
-import os
 from kivy.uix.screenmanager import Screen
+
 
 class Source_Screen(Screen):
 
@@ -7,4 +7,4 @@ class Source_Screen(Screen):
         self.manager.current = 'file_chooser'
 
     # In debian the path of external devices is /media/hostname/
-    #device_name = os.listdir('')
+    # device_name = os.listdir('')

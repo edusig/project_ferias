@@ -66,7 +66,7 @@ class Type_Selector(Screen):
     #
 
     # XXX: Quando os testes forem feitos no RPi eh necessarios listar e alterar os
-    #leitores de formatos para sua utilizacao.
+    # leitores de formatos para sua utilizacao.
     def _load_image(self, filename):
         subprocess.call(['eog', '-f', filename], shell=False)
 

@@ -7,4 +7,4 @@ install:
 notifications:
   slack: opuntiateam:TFBnF9P5IaHdmPHpCMy7vST3
 script:
-  - pep8 *py
+    - pep8 *py --max-line-length=95 --ignore=E402

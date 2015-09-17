@@ -56,7 +56,7 @@ class DropboxAPI(RemoteFiles):
         saved_access = False
         #: Try opening a access_token saved file
         try:
-            with open(self.download_folder+'/access_token', 'r') as auth_code_file:
+            with open(self.download_folder + '/access_token', 'r') as auth_code_file:
                 self.access_token = auth_code_file.readline().replace('\n', '')
                 self.user_id = auth_code_file.readline()
                 saved_access = True
@@ -80,7 +80,7 @@ class DropboxAPI(RemoteFiles):
                 if ntry > 0:
                     return False
                 print 'Trying again...'
-                return self.authenticate(ntry+1, screen)
+                return self.authenticate(ntry + 1, screen)
 
         #: API v1
         self.client = DropboxClient(self.access_token)
@@ -97,13 +97,13 @@ class DropboxAPI(RemoteFiles):
             print 'Trying again...'
             #: Deletes the access_token file before trying again
             if saved_access:
-                remove(self.download_folder+'/access_token')
-            return self.authenticate(ntry+1, screen)
+                remove(self.download_folder + '/access_token')
+            return self.authenticate(ntry + 1, screen)
 
         self.authenticated = True
         #: Save the access_token to a file if it wasn't set yet.
         if not saved_access:
-            with open(self.download_folder+'/access_token', 'w+') as auth_code_file:
+            with open(self.download_folder + '/access_token', 'w+') as auth_code_file:
                 auth_code_file.write(self.access_token)
                 auth_code_file.write('\n')
                 auth_code_file.write(self.user_id)
@@ -121,7 +121,7 @@ class DropboxAPI(RemoteFiles):
             path = path.replace('//', '/')
         try:
             f = self.client.get_file(path)
-            with open(self.download_folder+path, 'wb+') as out:
+            with open(self.download_folder + path, 'wb+') as out:
                 out.write(f.read())
         except HttpError as err:
             print('HTTP error', err)

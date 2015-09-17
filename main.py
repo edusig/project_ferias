@@ -1,16 +1,15 @@
 __version__ = '0.0.1'
 
+import source_screen
+import type_selector
+
 from kivy import properties
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-#from kivy.uix import settings
-#from kivy.uix.widget import Widget
 from kivy.lang import Builder
 
 # XXX: This import is related to fullscreen
-#from kivy.config import Config
-
-import source_screen, type_selector, status_bar
+# from kivy.config import Config
 
 
 class Main(BoxLayout):
@@ -37,7 +36,7 @@ class PresenterApp(App):
 
     def build(self):
         # This line activated the full screen mode
-        #Config.set('graphics', 'fullscreen', 'auto')
+        # Config.set('graphics', 'fullscreen', 'auto')
         self.icon = 'data/pixmaps/icon.png'
         Builder.load_file('visual.kv')
         root = Main()
