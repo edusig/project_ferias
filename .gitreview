@@ -1,5 +1,5 @@
 [gerrit]
 host=review.gerrithub.io
 port=29418
-project=edusig/project_ferias
+project=opuntiateam/opuntia
 defaultbranch=master

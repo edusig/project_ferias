@@ -1,15 +1,17 @@
 __version__ = '0.0.1'
 
-import source_screen
-import type_selector
-
 from kivy import properties
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
+# from kivy.uix import settings
+# from kivy.uix.widget import Widget
 from kivy.lang import Builder
 
 # XXX: This import is related to fullscreen
 # from kivy.config import Config
+
+import source_screen
+import type_selector
 
 
 class Main(BoxLayout):
