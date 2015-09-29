@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="pallet.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.087499999"
+     inkscape:cx="1358.6935"
+     inkscape:cy="853.28969"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="549"
+     inkscape:window-height="432"
+     inkscape:window-x="702"
+     inkscape:window-y="163"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3245"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3247"><rect
+           id="rect3249"
+           width="52.527931"
+           height="367.69553"
+           x="379.81735"
+           y="-79.008667" /></flowRegion><flowPara
+         id="flowPara3251" /></flowRoot>    <g
+       transform="translate(413.04741,423.5563)"
+       id="g4302"
+       inkscape:export-filename="/home/caina/color_pallet.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="-299.06641"
+         x="-705.71429"
+         height="814.28571"
+         width="1514.2858"
+         id="rect4271"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+      <g
+         transform="translate(8.4500885,3.3073013)"
+         id="g4273">
+        <g
+           id="g4245">
+          <g
+             id="g4216">
+            <rect
+               style="fill:#4d4d4d;fill-opacity:1;stroke:none"
+               id="rect2996"
+               width="268.57144"
+               height="611.42859"
+               x="-691.06451"
+               y="-175.48276" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="-651.44678"
+               y="499.1915"
+               id="text3051"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan3053"
+                 x="-651.44678"
+                 y="499.1915">4d4d4dff </tspan><tspan
+                 sodipodi:role="line"
+                 x="-651.44678"
+                 y="549.19153"
+                 id="tspan3065" /></text>
+          </g>
+          <g
+             id="g4222">
+            <rect
+               style="fill:#bc603c;fill-opacity:1;stroke:none"
+               id="rect2996-00"
+               width="268.57144"
+               height="611.42859"
+               x="-391.18588"
+               y="-175.30698" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="-349.8884"
+               y="499.01572"
+               id="text3051-1"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="-349.8884"
+                 y="499.01572"
+                 id="tspan3065-4">bc603cff</tspan></text>
+          </g>
+          <g
+             id="g4227">
+            <rect
+               style="fill:#d16130;fill-opacity:1;stroke:none"
+               id="rect2996-7"
+               width="268.57144"
+               height="611.42859"
+               x="-91.30719"
+               y="-175.30698" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="-49.540955"
+               y="499.01572"
+               id="text3051-16"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="-49.540955"
+                 y="499.01572"
+                 id="tspan3057-5">d16130ff </tspan><tspan
+                 sodipodi:role="line"
+                 x="-49.540955"
+                 y="549.01575"
+                 id="tspan3065-5" /></text>
+          </g>
+          <g
+             id="g4233">
+            <rect
+               style="fill:#9bae32;fill-opacity:1;stroke:none"
+               id="rect2996-0"
+               width="268.57144"
+               height="611.42859"
+               x="208.57146"
+               y="-175.30698" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="248.57988"
+               y="499.01572"
+               id="text3051-5"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="248.57988"
+                 y="499.01572"
+                 id="tspan3059-2">9bae32ff </tspan><tspan
+                 sodipodi:role="line"
+                 x="248.57988"
+                 y="549.01575"
+                 id="tspan3065-1" /></text>
+          </g>
+          <g
+             id="g4239">
+            <rect
+               style="fill:#adc037;fill-opacity:1;stroke:none"
+               id="rect2996-3"
+               width="268.57144"
+               height="611.42859"
+               x="508.45007"
+               y="-175.48276" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="549.7865"
+               y="499.1915"
+               id="text3051-7"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="549.7865"
+                 y="499.1915"
+                 id="tspan3061-0">adc037ff </tspan><tspan
+                 sodipodi:role="line"
+                 x="549.7865"
+                 y="549.19153"
+                 id="tspan3065-8" /></text>
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:77.63858032px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="-332.05951"
+           y="-228.10875"
+           id="text3377"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3379"
+             x="-332.05951"
+             y="-228.10875"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:abeatbyKai;-inkscape-font-specification:abeatbyKai">Opuntia Color Pallet</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
