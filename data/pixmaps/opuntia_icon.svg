@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="425"
+   height="425"
+   viewBox="0 0 425 425.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="opuntia_icon.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.3535534"
+     inkscape:cx="-290.15665"
+     inkscape:cy="473.89253"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:snap-bbox="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-627.36219)">
+    <g
+       id="g3320"
+       transform="translate(1012.8441,66.926069)"
+       inkscape:export-filename="/home/caina/Opuntia/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3336"
+         y="974.07611"
+         x="-910.92511"
+         style="font-size:401.1348877px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:abeatbyKai;-inkscape-font-specification:abeatbyKai"
+           y="974.07611"
+           x="-910.92511"
+           id="tspan3338"
+           sodipodi:role="line">u</tspan></text>
+      <g
+         transform="matrix(10.028372,0,0,10.028372,-3473.9367,-3083.5808)"
+         id="g4550">
+        <path
+           style="fill:#adc037;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 260.3768,381.49213 1.20332,-0.0436 c -15.55126,-22.69822 22.43612,-21.95201 7.6933,0 l 0.97887,0.0325"
+           id="path3395-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="fill:#9bae32;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 264.69531,364.70987 c -4.80915,2.82086 -7.42271,7.10166 -2.11563,16.76268 l 1.65728,0 c -1.84771,-6.3024 -0.95819,-11.62609 0.45835,-16.76268 z"
+           id="path4533"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="fill:#9bae32;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 265.02964,364.7139 c 5.00556,2.48657 7.93014,6.61274 3.35599,16.76838 l -1.66051,-2.3e-4 c 1.37405,-6.50353 0.099,-11.68765 -1.69548,-16.76815 z"
+           id="path4533-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <g
+         transform="matrix(10.028372,0,0,10.028372,-3491.443,-3118.112)"
+         id="g4620">
+        <path
+           style="fill:#adc037;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 274.44675,376.43429 c 7.0028,-5.17784 6.90442,7.73314 -2.63235,7.17662 1.10262,-1.92514 2.2686,-4.06005 2.63235,-7.17662 z"
+           id="path3397-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccc" />
+        <path
+           style="fill:#9bae32;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 277.93717,375.30746 c 0.3497,2.27875 -2.69146,7.16953 -6.1209,8.30851 4.85166,0.41131 9.40884,-5.47313 6.1209,-8.30851 z"
+           id="path4618"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccc" />
+      </g>
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4419"
+         d="m -868.45075,738.45748 117.22324,0 0,131.26767 c -0.82945,83.76476 -116.18076,76.43939 -117.22324,0 z"
+         style="fill:#d16130;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4419-6"
+         d="m -751.22751,738.45748 0,131.28071 c 0.0218,39.69187 -28.83934,61.13881 -58.61472,60.06775 l 0,-191.34846 z"
+         style="fill:#bc603c;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+    </g>
+  </g>
+</svg>
