@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="425"
-   height="425"
-   viewBox="0 0 425 425.00001"
+   width="255"
+   height="255"
+   viewBox="0 0 255 255.00001"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="opuntia_icon.svg">
+   sodipodi:docname="opuntia_icon.svg"
+   inkscape:export-filename="/home/caina/devel/opuntia/data/pixmaps/icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3535534"
-     inkscape:cx="-290.15665"
-     inkscape:cy="473.89253"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="-284.42096"
+     inkscape:cy="57.039303"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,10 +63,10 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-627.36219)">
+     transform="translate(0,-797.36219)">
     <g
        id="g3320"
-       transform="translate(1012.8441,66.926069)"
+       transform="matrix(1.1079204,0,0,1.1079204,1019.2324,162.13097)"
        inkscape:export-filename="/home/caina/Opuntia/icon.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
