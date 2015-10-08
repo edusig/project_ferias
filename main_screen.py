@@ -4,10 +4,10 @@ import usb.util
 from kivy.uix.screenmanager import Screen
 
 
-class Source_Screen(Screen):
+class MainScreen(Screen):
 
     def source_selected(self):
-        self.manager.current = 'file_chooser'
+        self.manager.current = 'filechooser_screen'
 
     # In debian the path of external devices is /media/hostname/
     # device_name = os.listdir('')

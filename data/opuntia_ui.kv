@@ -24,7 +24,7 @@
         source: 'data/pixmaps/icon.png'
 
 
-<Type_Selector>:
+<FileChooserScreen>:
     app: app
 
     canvas.before:
@@ -53,7 +53,7 @@
                 Image:
                     size_hint: (None, None)
                     size: ('120dp', '120dp')
-                    source: root.preview_file(file_chooser.selection) or 'No file selected!'
+                    #source: root.preview_file(file_chooser.selection) or 'No file selected!'
                 Label:
                     text: 'Image description\n This is a Test\n Thanks'
             Button:
@@ -61,34 +61,34 @@
                 on_release: root.filter_selected('*')
             Button:
                 text: 'Presentation'
-                on_release: root.filter_selected(['*.pptx', '*.ppt', '*.pdf', '*.odp'])
+                on_release: root.filter_selected(root.supported_file_types['presentation']['extensions'])
             Button:
                 text: 'Music'
-                on_release: root.filter_selected(['*.mp3'])
+                on_release: root.filter_selected(root.supported_file_types['music']['extensions'])
             Button:
                 text: 'Video'
-                on_release: root.filter_selected(['*.mp4', '*.avi'])
+                on_release: root.filter_selected(root.supported_file_types['video']['extensions'])
             Button:
                 text: 'Image'
-                on_release: root.filter_selected(['*.png', '*jpg', '*.jpeg', '*.bmp'])
+                on_release: root.filter_selected(root.supported_file_types['image']['extensions'])
             Button:
                 text: 'Back'
                 on_release: root.go_back()
         FileChooserIconView:
-            id: file_chooser
-            on_submit: root.load_file(file_chooser.selection)
+            id: filechooser_iconview
+            on_submit: root.select_file(filechooser_iconview.selection)
 
 
-<Source_Screen>
+<MainScreen>
     HBox:
         VBox:
             padding: '10dp'
             spacing: '10dp'
             HBox:
                 Button:
-                    text: 'Teste'
+                    text: 'Without Removable Drive'
                 Button:
-                    text: 'Local'
+                    text: 'Local Drive'
                     on_release: root.source_selected()
             HBox:
                 Button:

@@ -1,4 +1,4 @@
-from file_explorer import FileExplorer
+from base_explorer import BaseFileExplorer
 from abc import abstractmethod
 import tempfile
 from file import File
@@ -7,10 +7,10 @@ import os
 from urllib2 import HTTPError
 
 
-class RemoteFiles(FileExplorer):
+class RemoteFileExplorer(BaseFileExplorer):
 
     def __init__(self, application_name, base_folder='/opuntia'):
-        super(RemoteFiles, self).__init__()
+        super(RemoteFileExplorer, self).__init__()
         self.application_name = application_name
         self.base_folder = tempfile.gettempdir() + base_folder
         self.download_folder = self.base_folder + '/files'
@@ -33,13 +33,13 @@ class RemoteFiles(FileExplorer):
             return self.list(self.current_dir)
 
         #: If file doesn't exists, try downloading it.
-        if not os.access(self.download_folder+path, os.F_OK):
+        if not os.access(self.download_folder + path, os.F_OK):
             try:
                 self.download(path)
             except HTTPError as error:
                 raise IOError("Could not download remote file. Try again!", error)
 
-        super(RemoteFiles, self).open(self.download_folder+path)
+        super(RemoteFileExplorer, self).open(self.download_folder + path)
         return True
 
     #: TODO: Finish this method. Consider implementing only on the subclasses.
@@ -83,4 +83,4 @@ class RemoteFiles(FileExplorer):
         return False
 
 
-FileExplorer.register(RemoteFiles)
+BaseFileExplorer.register(RemoteFileExplorer)

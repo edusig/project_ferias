@@ -1,9 +1,10 @@
-from abc import ABCMeta, abstractmethod
 import os
+
 from file import File
+from abc import ABCMeta, abstractmethod
 
 
-class FileExplorer:
+class BaseFileExplorer:
     """File manipulation helper class
 
     A class to help manipulate files within a more complex system
@@ -20,7 +21,7 @@ class FileExplorer:
         'presentation': {
             'extensions': ['.ppt',
                            '.pptx',
-                           '.pdf'
+                           '.pdf',
                            '.odp'],
             'mime_types': ['application/mspowerpoint',
                            ('application/vnd.openxmlformats-officedocument'

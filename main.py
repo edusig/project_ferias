@@ -4,22 +4,22 @@ from kivy import properties
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 # from kivy.uix import settings
-# from kivy.uix.widget import Widget
 from kivy.lang import Builder
 
 # XXX: This import is related to fullscreen
 # from kivy.config import Config
 
-import source_screen
-import type_selector
+import main_screen
+import filechooser_screen
 
 
 class Main(BoxLayout):
 
     def __init__(self, **kwargs):
         super(Main, self).__init__(**kwargs)
-        self.ids.screen_manager.add_widget(source_screen.Source_Screen(name='source_screen'))
-        self.ids.screen_manager.add_widget(type_selector.Type_Selector(name='file_chooser'))
+        self.ids.screen_manager.add_widget(main_screen.MainScreen(name='main_screen'))
+        self.ids.screen_manager.add_widget(filechooser_screen.FileChooserScreen
+                                           (name='filechooser_screen'))
 
 
 class PresenterApp(App):
@@ -40,7 +40,7 @@ class PresenterApp(App):
         # This line activated the full screen mode
         # Config.set('graphics', 'fullscreen', 'auto')
         self.icon = 'data/pixmaps/icon.png'
-        Builder.load_file('visual.kv')
+        Builder.load_file('data/opuntia_ui.kv')
         root = Main()
         return root
 
