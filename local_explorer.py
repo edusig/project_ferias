@@ -1,7 +1,7 @@
 import subprocess
 
-from kivy import properties
 from base_explorer import BaseFileExplorer
+from kivy import properties
 
 
 class LocalFileExplorer(BaseFileExplorer):
@@ -12,16 +12,11 @@ class LocalFileExplorer(BaseFileExplorer):
         super(LocalFileExplorer, self).__init__()
 
     #
-    #   Public
+    # Public
     #
 
-    def filter_selected(self, filter_type=['*']):
-        del self.ids.file_chooser.filters[:]
-        for i in filter_type:
-            self.ids.file_chooser.filters.append('*' + i)
-
-    def go_back(self):
-        self.manager.current = 'source_screen'
+    def suported_extentions(self, file_type=None):
+        return self.supported_file_types[file_type]['extensions']
 
     def load_file(self, filename):
         self.open(str(filename.pop()))
@@ -43,7 +38,7 @@ class LocalFileExplorer(BaseFileExplorer):
         pass
 
     #
-    #   Private
+    # Private
     #
 
     # XXX: Quando os testes forem feitos no RPi eh necessarios listar e alterar os

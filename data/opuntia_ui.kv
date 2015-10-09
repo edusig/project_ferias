@@ -53,29 +53,27 @@
                 Image:
                     size_hint: (None, None)
                     size: ('120dp', '120dp')
-                    #source: root.preview_file(file_chooser.selection) or 'No file selected!'
+                    source: root.preview_file(filechooser_iconview.selection) or 'No file selected!'
                 Label:
                     text: 'Image description\n This is a Test\n Thanks'
             Button:
                 text: 'All'
-                on_release: root.filter_selected('*')
+                on_release: root.select_filter('*')
             Button:
                 text: 'Presentation'
-                on_release: root.filter_selected(root.supported_file_types['presentation']['extensions'])
+                on_release: root.select_filter('presentation')
             Button:
                 text: 'Music'
-                on_release: root.filter_selected(root.supported_file_types['music']['extensions'])
+                on_release: root.select_filter('music')
             Button:
                 text: 'Video'
-                on_release: root.filter_selected(root.supported_file_types['video']['extensions'])
+                on_release: root.select_filter('video')
             Button:
                 text: 'Image'
-                on_release: root.filter_selected(root.supported_file_types['image']['extensions'])
-            Button:
-                text: 'Back'
-                on_release: root.go_back()
+                on_release: root.select_filter('image')
         FileChooserIconView:
             id: filechooser_iconview
+            rootpath: root.home_path()
             on_submit: root.select_file(filechooser_iconview.selection)
 
 
